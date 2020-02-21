@@ -5,11 +5,14 @@ body {
 .header-wrapper {
     position: fixed;
 }
-.menu-icon {
+.menu-icon a{
     display: block;
-    background-color: $color-secondary;
     height: 25px;
     width: 25px;
+    background: url(../images/ico-menu.svg) no-repeat;
+    background-color: $color-secondary;
+    background-size: 50%;
+    background-position: center;
 }
 
 /* .menu-icon a img { */

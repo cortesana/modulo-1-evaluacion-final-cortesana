@@ -1,7 +1,8 @@
 .hero-wrapper{
-    background-image: url(../images/cover.jpg);
-    background-position-x: center;
-    height: 100%;
+    background: url(../images/cover.jpg) no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-wrapper section {
@@ -9,11 +10,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .hero-title {
     margin: 0px;
-    text-transform: capitalize;
+    color: $color-light;
+    text-transform: uppercase;
     text-align: center;
     @include font-title();
 }
@@ -23,5 +26,21 @@
 }
 
 .hero-text {
+    color: $color-light;
     @include font-text();
+}
+
+.hero-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: $color-light;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.hero-button a {
+    vertical-align: center;
 }

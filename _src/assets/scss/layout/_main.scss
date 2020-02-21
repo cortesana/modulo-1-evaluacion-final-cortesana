@@ -1,0 +1,7 @@
+.main-title {
+    text-transform: capitalize;
+    @include font-title();
+}
+.main-text {
+    @include font-text();
+}

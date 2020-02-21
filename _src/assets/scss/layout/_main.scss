@@ -5,3 +5,16 @@
 .main-text {
     @include font-text();
 }
+
+.main-link {
+    text-decoration: none;
+    color: $color-primary;
+    text-transform: capitalize;
+}
+
+.main-button {
+    color: $color-button;
+    border: 1px solid $color-button;
+    border-radius: 20px;
+    padding: 3px 15px;
+}

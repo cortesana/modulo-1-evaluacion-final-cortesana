@@ -1,0 +1,27 @@
+.hero-wrapper{
+    background-image: url(../images/cover.jpg);
+    background-position-x: center;
+    height: 100%;
+}
+
+.hero-wrapper section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    margin: 0px;
+    text-transform: capitalize;
+    text-align: center;
+    @include font-title();
+}
+
+.hero-text:first-letter  {
+    text-transform: capitalize;
+}
+
+.hero-text {
+    @include font-text();
+}

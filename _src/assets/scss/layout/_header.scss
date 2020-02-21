@@ -1,0 +1,26 @@
+body {
+    height: 100%;
+}
+
+.header-wrapper {
+    position: fixed;
+}
+.menu-icon {
+    display: block;
+    background-color: $color-secondary;
+    height: 25px;
+    width: 25px;
+}
+
+/* .menu-icon a img { */
+    /* margin: auto;
+    vertical-align: middle; */
+
+/* 
+& .menu-icon{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url(../images/menu.png) no-repeat;
+    background-size: 100%;
+} */

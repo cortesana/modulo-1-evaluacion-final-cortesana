@@ -7,13 +7,6 @@ $color-secondary: #0271bc;
 $color-tertiary: #304268;
 $color-background-section: #eff9ff;
 
-/* FONTS */
-/* $font-family-title: 'Roboto Slab', serif;
-$font-family-text: 'Roboto', sans-serif;
-$font-weight-regular: 400;
-$font-weight-button: 500;
-$font-weight-title: 700; */
-
 @mixin font-title() {
     font-family: 'Roboto Slab', serif;
     font-weight: 700;

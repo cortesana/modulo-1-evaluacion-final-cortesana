@@ -1,0 +1,33 @@
+.purchase-wrapper {
+    background-color: $color-background-section;
+}
+.purchase-title {
+    @include font-title();
+}
+
+.purchase-text {
+    @include font-text();
+}
+
+.purchase-button {
+    @include font-button();
+    color: $color-light;
+    background-color: $color-button;
+    border-radius: 20px;
+    padding: 3px 15px;
+}
+
+.scroll-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: $color-light;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.scroll-up a {
+    vertical-align: center;
+}

@@ -17,4 +17,5 @@
     border: 1px solid $color-button;
     border-radius: 20px;
     padding: 3px 15px;
+    @include font-button();
 }

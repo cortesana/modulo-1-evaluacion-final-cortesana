@@ -1,29 +1,17 @@
-body {
+.container {
     height: 100%;
+    font-size: 16px;
 }
 
 .header-wrapper {
     position: fixed;
 }
-.menu-icon a{
+.menu-icon a {
     display: block;
-    height: 25px;
-    width: 25px;
+    height: 44px;
+    width: 44px;
     background: url(../images/ico-menu.svg) no-repeat;
     background-color: $color-secondary;
-    background-size: 50%;
+    background-size: 40%;
     background-position: center;
 }
-
-/* .menu-icon a img { */
-    /* margin: auto;
-    vertical-align: middle; */
-
-/* 
-& .menu-icon{
-    display: block;
-    width: 25px;
-    height: 25px;
-    background: url(../images/menu.png) no-repeat;
-    background-size: 100%;
-} */

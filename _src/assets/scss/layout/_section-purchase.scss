@@ -1,31 +1,53 @@
 .purchase-wrapper {
     background-color: $color-background-section;
+    display: grid;
+    /* grid-template-columns: 40px auto 40px;
+    grid-template-rows: 40px 100px auto 100px 40px; */
 }
+
 .purchase-title {
     @include font-title();
+}
+
+.purchase-primary-title {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    line-height: 1.25;
 }
 
 .purchase-text {
     @include font-text();
 }
 
+.purchase-secondary-title:first-letter, .purchase-text:first-letter {
+    text-transform: capitalize;
+}
+
+.section-text {
+    font-size: 1.125rem;
+    line-height: 1.67;
+}
 .purchase-button {
     @include font-button();
     color: $color-light;
     background-color: $color-button;
-    border-radius: 20px;
-    padding: 3px 15px;
+    border: 2px solid $color-button;
+    border-radius: 22.5px;
+    padding: 8px 25px;
+    font-size: 1.25rem;
+    line-height: 2.25;
 }
 
 .scroll-up {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
-    width: 30px;
+    height: 45px;
+    width: 45px;
     background-color: $color-light;
     background-position: center;
-    border-radius: 30px;
+    border-radius: 22.5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 .scroll-up a {

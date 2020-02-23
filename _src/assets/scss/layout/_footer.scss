@@ -1,0 +1,39 @@
+.footer-wrapper {
+    background-color: $color-tertiary;
+    color: $color-light;
+    @include font-text();
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-menu {
+    margin-top: 60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer-menu-items li a {
+    color: white;
+    line-height: 1.88;
+}
+
+.contact-menu {
+    margin: 30px;
+}
+
+.heart-emoji {
+    color: $color-button;
+}
+
+.footer-text {
+    margin-bottom: 45px;
+}
+
+.copyright small{
+    display: block;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 2.14;
+}

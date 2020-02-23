@@ -8,17 +8,20 @@
 .hero-wrapper section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-end;
     height: 100%;
 }
 
 .hero-title {
+    font-size: 2.625rem;
     margin: 0px;
     color: $color-light;
     text-transform: uppercase;
     text-align: center;
     @include font-title();
+    line-height: 1.31;
+    margin: 15px;
 }
 
 .hero-text:first-letter  {
@@ -34,11 +37,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
-    width: 30px;
+    height: 45px;
+    width: 45px;
     background-color: $color-light;
     background-position: center;
-    border-radius: 30px;
+    border-radius: 22.5px;
+    margin-top: 50px;
+    margin-bottom: 90px;
 }
 
 .hero-button a {

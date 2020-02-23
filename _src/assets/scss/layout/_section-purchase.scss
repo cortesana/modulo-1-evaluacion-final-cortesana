@@ -1,10 +1,19 @@
 .purchase-wrapper {
     background-color: $color-background-section;
     display: grid;
-    /* grid-template-columns: 40px auto 40px;
-    grid-template-rows: 40px 100px auto 100px 40px; */
+    grid-template-columns: 15px 50px auto 50px 15px;
+    grid-template-rows: 30px 30px auto 100px 40px;
+    section {
+        grid-column: 1/6;
+        grid-row: 1/6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin-bottom: 60px;
+    }
 }
-
 .purchase-title {
     @include font-title();
 }
@@ -13,11 +22,16 @@
     text-transform: capitalize;
     font-size: 1.5rem;
     line-height: 1.25;
+    margin-top: 30px;
 }
 
 .purchase-text {
     @include font-text();
 }
+
+.reason-to-purchase {
+    margin: 45px 0px;
+} 
 
 .purchase-secondary-title:first-letter, .purchase-text:first-letter {
     text-transform: capitalize;
@@ -26,7 +40,10 @@
 .section-text {
     font-size: 1.125rem;
     line-height: 1.67;
+    width: 180px;
+    margin: auto;
 }
+
 .purchase-button {
     @include font-button();
     color: $color-light;
@@ -38,6 +55,10 @@
     line-height: 2.25;
 }
 
+.scroll-up-container  {
+    position: relative;
+}
+
 .scroll-up {
     display: flex;
     justify-content: center;
@@ -47,7 +68,10 @@
     background-color: $color-light;
     background-position: center;
     border-radius: 22.5px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(82, 81, 81, 0.5);
+    position: absolute;
+    left: 40%;
+    top: 40px;
 }
 
 .scroll-up a {

@@ -1,0 +1,66 @@
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    margin-bottom: 45px;
+}
+.main-title {
+    text-transform: capitalize;
+    @include font-title();
+    font-size: 1.5rem;
+    width: 70%;
+    margin: 15px 0px;
+    line-height: 1.25;
+}
+.main-text {
+    @include font-text();
+    font-size: 1.125rem;
+    line-height: 1.67;
+    margin-bottom: 25px;;
+}
+
+.main-link {
+    text-decoration: none;
+    color: $color-primary;
+    text-transform: capitalize;
+    @include font-text();
+    font-size: 0.875rem;
+}
+
+.main-button {
+    color: $color-button;
+    border: 2px solid $color-button;
+    border-radius: 22.5px;
+    padding: 8px 25px;
+    line-height: 2.25;
+    @include font-button();
+    font-size: 1.25rem;
+    margin-bottom: 2.813rem;
+}
+
+.main-button:hover {
+    background-color: $color-button;
+    color: $color-light;
+}
+
+@include forTablet {
+    .main-wrapper {
+        margin: 40px;
+        margin-bottom: 3.75rem;
+    }
+    .main-title {
+        font-size: 1.625rem;
+    }
+    .main-text {
+        font-size: 1.25rem;
+    }
+}
+@include forDesktop {
+    .main-wrapper {
+        margin: 40px 275px;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+}

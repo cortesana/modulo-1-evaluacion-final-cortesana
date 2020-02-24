@@ -2,21 +2,34 @@
     background-color: $color-tertiary;
     color: $color-light;
     @include font-text();
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    padding: 45px;
+    footer {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+            @include forTablet {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: left;
+        }
+    }
 }
 
 .navigation-menu {
     margin-top: 60px;
+    @include forTablet {
+        margin: 30px 0px;
+    }
 }
 
 .contact-menu {
     margin: 30px 0px;
 }
-.navigation-menu li a, .contact-menu li a {
+.navigation-menu ul li a, .contact-menu ul li a {
     text-decoration: none;
     color: $color-light;
     line-height: 1.88;
@@ -28,6 +41,9 @@
 }
 .copyright-container {
     margin-bottom: 45px;
+    @include forTablet {
+        margin: 30px 0px;
+    }
 }
 .copyright {
     display: block;

@@ -2,21 +2,11 @@
     background-color: $color-tertiary;
     color: $color-light;
     @include font-text();
-}
-.footer-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.navigation-menu li a, .contact-menu li a {
-    text-decoration: none;
-    color: $color-light;
-    line-height: 1.88;
-    padding: 5px;
-    text-transform: uppercase;
 }
 
 .navigation-menu {
@@ -25,45 +15,40 @@
 
 .contact-menu {
     margin: 30px 0px;
-    
+}
+.navigation-menu li a, .contact-menu li a {
+    text-decoration: none;
+    color: $color-light;
+    line-height: 1.88;
+    padding: 5px;
+    text-transform: uppercase;
+    &:hover {
+        color: $color-button;
+    }
+}
+.copyright-container {
+    margin-bottom: 45px;
+}
+.copyright {
+    display: block;
 }
 
 .heart-emoji {
-    color: $color-button;
-}
-
-.copyright small{
-    display: block;
-    text-align: center;
-    font-size: 0.875rem;
-    line-height: 2.14;
+    color:$color-button;
 }
 
 @include forTablet {
-    
-    .footer-wrapper footer {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .footer-text {
+    .footer-wrapper {
+        padding: 45px;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-end;
-        margin: 0 45px;
-    }
-    .footer-menu {
+        align-items: flex-start;
         text-align: left;
-        margin-bottom: 45px;
-        width: 50vw;
     }
+}
 
-    .copyright-container {
-        position: relative;
-        right: 20%;
-        bottom: -30%;
-    }
-    .copyright {
-        position: absolute;
-        margin: 0px;
+@include forDesktop {
+    .footer-wrapper{
+        justify-content: center;
     }
 }

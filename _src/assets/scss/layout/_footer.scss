@@ -23,11 +23,15 @@
     margin-top: 60px;
     @include forTablet {
         margin: 30px 0px;
+        order: 2;
     }
 }
 
 .contact-menu {
     margin: 30px 0px;
+    @include forTablet {
+        order: 3;
+    }
 }
 .navigation-menu ul li a, .contact-menu ul li a {
     text-decoration: none;
@@ -43,6 +47,7 @@
     margin-bottom: 45px;
     @include forTablet {
         margin: 30px 0px;
+        order: 1;
     }
 }
 .copyright {
